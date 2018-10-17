@@ -38,7 +38,8 @@ namespace criticalUpdatesSignalR
             try
             {
                 string appType = ConfigurationManager.AppSettings["appFriendlyName"];
-                criticalUpdateProxy.Invoke("joinAppTypeGroup", appType).Wait();
+                string apptype = "b0959b75-2258-48b8-a703-780a8f58c79d";
+                criticalUpdateProxy.Invoke("joinAppTypeGroup", apptype).Wait();
             }
             catch (Exception ex) { throw new ArgumentException("Error joining apptype group", ex); }
         }
@@ -47,7 +48,8 @@ namespace criticalUpdatesSignalR
             try
             {
                 string appType = ConfigurationManager.AppSettings["appFriendlyName"];
-                criticalUpdateProxy.Invoke("pushCriticalUpdateToAppType", appType).Wait();
+                string apptype = "b0959b75-2258-48b8-a703-780a8f58c79d";
+                criticalUpdateProxy.Invoke("pushCriticalUpdateToAppType", apptype).Wait();
             }
             catch (Exception ex) { throw new ArgumentException("Error joining apptype group", ex); }
         }
