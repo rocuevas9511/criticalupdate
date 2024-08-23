@@ -1,1 +1,1 @@
-this was a PoC of OTA updates 
+this was a PoC of singalR client 
